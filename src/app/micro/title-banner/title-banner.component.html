@@ -1,0 +1,67 @@
+<ng-container [ngSwitch]="currentPage">
+  <section [ngClass]="{'subtitle': isSubPage}">
+    <div id="bg0"></div>
+    <div id="bg_others">
+      <img src="/assets/img/header_sub.png" class="bg_others_1">
+    </div>
+
+    <div id="bg_others">
+      <img src="/assets/img/header_sub.png" class="bg_others_2">
+    </div>
+
+    <div id="bg_main">
+      <img src="/assets/img/header_3.png" id="bg3" class="bg_intro">
+      <img src="/assets/img/header_1.png" id="bg1" class="bg_intro">
+      <img src="/assets/img/header_2.png" id="bg2" class="bg_intro">
+      <img src="/assets/img/header_4.png" id="bg4" class="bg_intro">
+      <img src="/assets/img/header_5.png" id="bg5" class="bg_intro">
+      <img src="/assets/img/header_6.png" id="bg6" class="bg_intro">
+    </div>
+  </section>
+
+  <section class="intro home" *ngSwitchCase="'home'">
+    <article>
+      <img src="/assets/img/logo_bright.png" alt="로고">
+      <div class="contents">
+        <h1 lang="EN"> Sharing Service Solution </h1>
+        <h2 lang="EN"> based on Artificial Intelligence </h2>
+      </div>
+    </article>
+  </section>
+
+  <section class="intro2 home" *ngSwitchCase="'home'">
+    <article>
+      <div class="contents">
+        <h1>Share all the assets from We2lab.</h1>
+        <h2 routerLink="/business">Our business solutions >></h2>
+      </div>
+    </article>
+  </section>
+
+  <section class="intro subtitle" *ngSwitchCase="'business'">
+    <article>
+      <div class="contents">
+        <h1 lang="EN">Our Businesses</h1>
+        <h2 lang="EN">based on Artificial Intelligence</h2>
+      </div>
+    </article>
+  </section>
+
+  <section class="intro subtitle" *ngSwitchCase="'products'">
+    <article>
+      <div class="contents">
+        <h1 lang="EN">Products</h1>
+        <h2 lang="EN">based on Artificial Intelligence</h2>
+      </div>
+    </article>
+  </section>
+
+  <section class="intro subtitle" *ngSwitchCase="'contact'">
+    <article>
+      <div class="contents">
+        <h1 lang="EN">Contact Us</h1>
+        <h2 lang="EN">based on Artificial Intelligence</h2>
+      </div>
+    </article>
+  </section>
+</ng-container>

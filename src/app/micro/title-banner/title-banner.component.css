@@ -1,0 +1,191 @@
+:host {
+  display: block;
+  height: 33em;
+  overflow: hidden;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    z-index: -1;
+  }
+}
+
+@keyframes focusOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    filter: blur(5px) grayscale(80%);
+  }
+}
+
+@keyframes focusIn {
+  from {}
+  to {
+    filter: none;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    pointer-events: inherit;
+  }
+}
+
+#bg_main {
+  position: absolute;
+  animation: focusIn 1s forwards;
+  animation-delay: 3s;
+  transition: transform 2s;
+  z-index: -4;
+}
+
+.subtitle #bg_main {
+  transform: translateX(30vw);
+  z-index: -4;
+}
+
+#bg_others {
+  position: absolute;
+  animation: focusOut 2s forwards;
+  z-index: -8;
+}
+
+.bg_others_1,
+.bg_others_2 {
+  position: absolute;
+  width: 30em;
+  z-index: -20;
+  transition: transform 2s;
+}
+
+.bg_others_1 {
+  top: 2em;
+  left: 5vw;
+  transform: rotateY(180deg);
+}
+
+.subtitle .bg_others_1 {
+  transform: translateX(7vw) scale(0.8, 0.8);
+  opacity: 0.5;
+}
+
+.bg_others_2 {
+  top: 20em;
+  left: 80vw;
+}
+
+.subtitle .bg_others_2 {
+  transform: translate(-48vw, -12em) scale(1.2, 1.2);
+  /* opacity: 0.5; */
+}
+
+.bg_intro {
+  width: 1200px;
+  height: auto;
+  position: absolute;
+  margin-top: -5em;
+  top: 0;
+  left: calc(50vw - 600px);
+  animation: slide 0.5s both;
+  -webkit-animation: slide 1s both;
+  transform: rotateY(360deg);
+  opacity: 0;
+}
+
+#bg0 {
+  width: 100vw;
+  background: linear-gradient(#ccc, #eee);
+  height: 40em;
+  position: absolute;
+  z-index: -10;
+}
+
+#bg1 {
+  animation-delay: 1s;
+}
+
+#bg2 {
+  animation-delay: 1.5s;
+}
+
+#bg3 {
+  animation-delay: 2s;
+  z-index: -4;
+}
+
+#bg4 {
+  animation-delay: 2s;
+}
+
+#bg5 {
+  animation-delay: 1.5s;
+}
+
+#bg6 {
+  animation-delay: 2.5s;
+}
+
+.intro {
+  display: flex;
+  position: absolute;
+  height: 25em;
+  /* background-image: url('/assets/img/header.png'); */
+  background-size: 1300px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.intro article {
+  padding: 8em 7vw 2em 7vw;
+  text-align: center;
+  color: white;
+}
+
+.subtitle article {
+  text-align: left;
+  padding-top: 12em;
+  padding-left: 10vw;
+  text-shadow: 0 0 10px black;
+}
+.subtitle article * {
+  font-weight: 300;
+}
+
+.intro img {
+  width: 7em;
+  margin: 0 0 1em 0;
+  flex: none;
+}
+
+.intro h1 {
+  font-size: 2.75em;
+  margin: 0.25em 0;
+  font-weight: 300;
+}
+
+.intro h2 {
+  font-size: 1.4em;
+  margin: 0.25em 0;
+  font-weight: 100;
+}
+
+.intro2 {
+  position: absolute;
+  top: 24em;
+  background: rgba(150, 150, 150, 0.6);
+  padding: 1em 3em;
+  opacity: 0;
+  animation: fadeIn 1s both;
+  animation-delay: 4s;
+  pointer-events: none;
+  color: white;
+}

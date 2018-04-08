@@ -1,0 +1,19 @@
+footer {
+  margin: 2em auto;
+  color: #ddd;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+footer nav {
+  display: flex;
+  padding: 0 10em;
+}
+
+footer nav li {
+  flex: 1;
+}
+
+.footer {
+  background: #666;
+}

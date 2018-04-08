@@ -1,0 +1,50 @@
+header {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1em;
+  margin: 1em calc((100vw - 1100px)/2);
+  border: 1px solid white;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px white;
+  z-index: 10;
+}
+
+header img {
+  width: auto;
+  height: 1.5em;
+  margin: 0.25em 3em;
+  flex: none;
+}
+
+header nav {
+  width: 30vw;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+header nav li {
+  flex: none;
+  font-size: 1em;
+  font-weight: 500;
+  color: #999;
+  padding: 0.5em 0;
+  margin: 0 1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+header select {
+  width: 8em;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 500;
+  flex: none;
+  color: #666;
+  margin: 0 1em 0 5em;
+  border: none;
+  background: transparent;
+  outline: none;
+}

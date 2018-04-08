@@ -1,0 +1,9 @@
+.point {
+  transform: scale(1);
+  z-index: 1;
+}
+
+.point li {
+  list-style: circle;
+  line-height: 200%;
+}
