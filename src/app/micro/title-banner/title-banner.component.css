@@ -104,7 +104,7 @@
 #bg0 {
   width: 100vw;
   background: linear-gradient(#ccc, #eee);
-  height: 40em;
+  height: 100vh;
   position: absolute;
   z-index: -10;
 }

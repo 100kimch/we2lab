@@ -70,10 +70,31 @@ section>* {
   padding: 3em 0;
 }
 
-#description {
+#section-main {
   background: url('/assets/img/bg1.jpg');
   background-size: cover;
   /* background: #238a9c;   */
+}
+
+.section-half-transparent {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2em 0;
+  color: white;
+  line-height: 200%;
+}
+
+.section-half-transparent h1 {
+  padding-bottom: 0.5em;
+}
+
+.section-half-transparent li {
+  padding-left: 2em;
+  list-style: circle;
+}
+
+.section-description {
+  background: #ddd;
+  padding: 2em 0;
 }
 
 .point article {
