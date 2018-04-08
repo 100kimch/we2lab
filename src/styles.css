@@ -8,10 +8,11 @@ body {
 }
 
 body * {
-  font-weight: 100;  
+  font-weight: 100;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -20,6 +21,7 @@ section {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 section>* {
@@ -128,4 +130,43 @@ section>* {
 
 #p1 * {
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  section * {
+    width: auto;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .point article {
+    display: block;
+    width: 100vw;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  .point h2 {
+    width: 100vw;
+    flex: none;
+  }
+
+  #p1 .bg {
+    height: 50em;
+  }
+
+  #section-main article {
+    display: block;
+  }
+  #section-main article * {
+    margin: 1em;
+  }
+
+  .section-description {
+    padding: 1em;
+  }
 }

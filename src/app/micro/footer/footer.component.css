@@ -16,7 +16,7 @@ footer nav li {
 }
 
 footer p {
-  font-size: 0.9em;  
+  font-size: 0.9em;
 }
 
 footer p+p {
@@ -25,4 +25,20 @@ footer p+p {
 
 .footer {
   background: #666;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    display: block;
+    margin: 2em 1em;
+  }
+  footer nav {
+    width: calc(100vw - 2em);
+    text-align: center;
+  }
+  footer p {
+    text-align: justify;
+    width: calc(100vw - 2em);
+    overflow-wrap: break-word;
+  }
 }

@@ -53,18 +53,14 @@
   z-index: -4;
 }
 
-#bg_others {
-  position: absolute;
-  animation: focusOut 2s forwards;
-  z-index: -8;
-}
-
 .bg_others_1,
 .bg_others_2 {
   position: absolute;
   width: 30em;
   z-index: -20;
+  animation: focusOut 2s forwards;
   transition: transform 2s;
+  z-index: -8;
 }
 
 .bg_others_1 {
@@ -188,4 +184,21 @@
   animation-delay: 4s;
   pointer-events: none;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  :host {
+    height: 27em;
+  }
+  #bg0 {
+    display: none;
+  }
+  .intro2 {
+    display: none;
+    top: 27em;
+    padding: 0.5em 1em;
+  }
+  .intro2 * {
+    margin: 0.25em;
+  }
 }

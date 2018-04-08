@@ -54,3 +54,29 @@ header select {
   background: transparent;
   outline: none;
 }
+
+@media screen and (max-width: 600px) {
+  header {
+    width: 100vw;
+    margin: 0;
+    padding: 1em 1em 0.25em 1em;
+    display: block;
+  }
+  header img {
+    margin: 0.25em 1em;
+  }
+  header nav {
+    width: 100%;
+    justify-content: space-between;
+    margin: 0.5em 0 0 0;
+  }
+  header select {
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+    direction: rtl;
+    width: 6em;
+    /* border: 1px solid #ddd; */
+    /* border-radius: 1em; */
+  }
+}
