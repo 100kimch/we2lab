@@ -25,18 +25,22 @@ export class TitleBannerComponent implements OnInit {
           case '/home':
             this.isSubPage = false;
             this.currentPage = 'home';
+            this._elementRef.nativeElement.classList.remove('subtitle');
             break;
           case '/business':
             this.isSubPage = true;
             this.currentPage = 'business';
+            this._elementRef.nativeElement.classList.add('subtitle');
             break;
           case '/products':
             this.isSubPage = true;
             this.currentPage = 'products';
+            this._elementRef.nativeElement.classList.add('subtitle');
             break;
           case '/contact':
             this.isSubPage = true;
             this.currentPage = 'contact';
+            this._elementRef.nativeElement.classList.add('subtitle');
             break;
         }
         // this.updateData(routePath);

@@ -1,7 +1,11 @@
 :host {
   display: block;
   height: 33em;
-  overflow: hidden;
+  transition: height 1s;
+}
+
+:host.subtitle {
+  height: 18em;
 }
 
 @keyframes slide {
@@ -40,8 +44,19 @@
   }
 }
 
+.bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 #bg_main {
   position: absolute;
+  width: auto;
+  height: auto;
   animation: focusIn 1s forwards;
   animation-delay: 3s;
   transition: transform 2s;
@@ -53,10 +68,37 @@
   z-index: -4;
 }
 
+#bg_main_1 {
+  animation-delay: 1s;
+}
+
+#bg_main_2 {
+  animation-delay: 1.5s;
+}
+
+#bg_main_3 {
+  animation-delay: 2s;
+  z-index: -4;
+}
+
+#bg_main_4 {
+  animation-delay: 2s;
+}
+
+#bg_main_5 {
+  animation-delay: 1.5s;
+}
+
+#bg_main_6 {
+  animation-delay: 2.5s;
+}
+
+
 .bg_others_1,
 .bg_others_2 {
   position: absolute;
   width: 30em;
+  height: auto;
   z-index: -20;
   animation: focusOut 2s forwards;
   transition: transform 2s;
@@ -97,39 +139,6 @@
   opacity: 0;
 }
 
-#bg0 {
-  width: 100vw;
-  background: linear-gradient(#ccc, #eee);
-  height: 100vh;
-  position: absolute;
-  z-index: -10;
-}
-
-#bg1 {
-  animation-delay: 1s;
-}
-
-#bg2 {
-  animation-delay: 1.5s;
-}
-
-#bg3 {
-  animation-delay: 2s;
-  z-index: -4;
-}
-
-#bg4 {
-  animation-delay: 2s;
-}
-
-#bg5 {
-  animation-delay: 1.5s;
-}
-
-#bg6 {
-  animation-delay: 2.5s;
-}
-
 .intro {
   display: flex;
   position: absolute;
@@ -140,20 +149,21 @@
   background-position: center;
 }
 
+.intro.subtitle {
+  height: 15em;
+}
+
 .intro article {
-  padding: 8em 7vw 2em 7vw;
+  padding: 4.5em 7vw 2em 7vw;
   text-align: center;
   color: white;
 }
 
 .subtitle article {
   text-align: left;
-  padding-top: 12em;
+  padding-top: 5em;
   padding-left: 10vw;
-  text-shadow: 0 0 10px black;
-}
-.subtitle article * {
-  font-weight: 300;
+  text-shadow: 0 0 5px #333;
 }
 
 .intro img {
@@ -165,23 +175,23 @@
 .intro h1 {
   font-size: 2.75em;
   margin: 0.25em 0;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .intro h2 {
   font-size: 1.4em;
   margin: 0.25em 0;
-  font-weight: 100;
+  font-weight: 500;
 }
 
 .intro2 {
   position: absolute;
-  top: 24em;
+  top: 30em;
   background: rgba(150, 150, 150, 0.6);
   padding: 1em 3em;
   opacity: 0;
   animation: fadeIn 1s both;
-  animation-delay: 4s;
+  animation-delay: 2s;
   pointer-events: none;
   color: white;
 }

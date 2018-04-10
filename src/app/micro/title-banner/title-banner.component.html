@@ -1,21 +1,20 @@
 <ng-container [ngSwitch]="currentPage">
-  <section [ngClass]="{'subtitle': isSubPage}">
-    <div id="bg0"></div>
-    <div>
-      <img src="/assets/img/header_sub.png" class="bg_others_1">
-    </div>
+  <section [ngClass]="{'subtitle': isSubPage}" class="bg">
 
     <div>
-      <img src="/assets/img/header_sub.png" class="bg_others_2">
+      <img src="/assets/img/header_sub.png" class="bg bg_others_1">
+    </div>
+    <div>
+      <img src="/assets/img/header_sub.png" class="bg bg_others_2">
     </div>
 
     <div id="bg_main">
-      <img src="/assets/img/header_3.png" id="bg3" class="bg_intro">
-      <img src="/assets/img/header_1.png" id="bg1" class="bg_intro">
-      <img src="/assets/img/header_2.png" id="bg2" class="bg_intro">
-      <img src="/assets/img/header_4.png" id="bg4" class="bg_intro">
-      <img src="/assets/img/header_5.png" id="bg5" class="bg_intro">
-      <img src="/assets/img/header_6.png" id="bg6" class="bg_intro">
+      <img src="/assets/img/header_3.png" id="bg_main_3" class="bg bg_intro">
+      <img src="/assets/img/header_1.png" id="bg_main_1" class="bg bg_intro">
+      <img src="/assets/img/header_2.png" id="bg_main_2" class="bg bg_intro">
+      <img src="/assets/img/header_4.png" id="bg_main_4" class="bg bg_intro">
+      <img src="/assets/img/header_5.png" id="bg_main_5" class="bg bg_intro">
+      <img src="/assets/img/header_6.png" id="bg_main_6" class="bg bg_intro">
     </div>
   </section>
 
@@ -33,7 +32,7 @@
     <article>
       <div class="contents">
         <h1>Share all the assets from We2lab.</h1>
-        <h2 routerLink="/business">Our business solutions >></h2>
+        <h2 routerLink="/business" class="withLink">Our business solutions >></h2>
       </div>
     </article>
   </section>
@@ -41,7 +40,7 @@
   <section class="intro subtitle" *ngSwitchCase="'business'">
     <article>
       <div class="contents">
-        <h1 lang="EN">Our Businesses</h1>
+        <h1 lang="EN">Businesses</h1>
         <h2 lang="EN">based on Artificial Intelligence</h2>
       </div>
     </article>

@@ -1,13 +1,15 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 body {
   width: 100vw;
   margin: 0;
   padding: 0;
   background: #ccc;
   color: #666;
-  overflow-x: hidden;
+  background: linear-gradient(#ccc, #eee);
 }
 
 body * {
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: 100;
 }
 
@@ -86,6 +88,7 @@ section>* {
 }
 
 .section-half-transparent h1 {
+  font-size: 1.5em;
   padding-bottom: 0.5em;
 }
 
@@ -94,22 +97,65 @@ section>* {
   list-style: circle;
 }
 
+.section-half-transparent video {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
 .section-description {
   background: #ddd;
   padding: 2em 0;
 }
 
+.section-description h1 {
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+.title-only {
+  margin: 0;
+  padding: 1em 0 0 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.short-contents {
+  padding: 3em 0;
+  line-height: 250%;
+}
+
+.short-contents article * {
+  margin-left: 2em;
+}
+
+.point {
+  text-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
+}
+
 .point article {
   display: flex;
+  width: 1100px;
   padding: 2em 0;
   color: white;
 }
 
 .point h1 {
   flex: 0;
-  flex-basis: 7em;
-  margin: 0 1em;
+  flex-basis: 12em;
+  margin: 0;
   font-size: 2em;
+}
+
+.point h1:nth-child(2n-1) {
+  margin-right: 1em;
+}
+
+.point h1:nth-child(2n) {
+  margin-left: 1em;
+  text-align: right;
 }
 
 .point h2 {
@@ -119,17 +165,19 @@ section>* {
   line-height: 170%;
 }
 
-#p1 .bg {
-  position: absolute;
+.point .bg {
+  position: relative;
+  top: -2em;
   width: 100vw;
-  height: 30em;
+  height: 40em;
+  margin-bottom: -40em;
   object-fit: cover;
   filter: brightness(50%);
   z-index: -1;
 }
 
-#p1 * {
-  color: white;
+.withLink {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
@@ -154,18 +202,15 @@ section>* {
     width: 100vw;
     flex: none;
   }
-
   #p1 .bg {
     height: 50em;
   }
-
   #section-main article {
     display: block;
   }
   #section-main article * {
     margin: 1em;
   }
-
   .section-description {
     padding: 1em;
   }
