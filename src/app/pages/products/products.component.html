@@ -1,19 +1,36 @@
 <section class="section-half-transparent">
   <article>
-    <h1>Types of Products</h1>
-    <div class="flex">
+    <h1 *ngIf="window['lang']=='en'">Types of Products</h1>
+    <h1 *ngIf="window['lang']=='ko'">서비스 기술</h1>
+    <div class="flex" *ngIf="window['lang']=='en'">
       <li>
-        <img src="/assets/img/products_iot.png">
-        IoT Device
-        <br><b>GPS | Vibration Sensor | Gyroscope</b></li>
+        <img src="/assets/img/products_iot.png"> IoT Device
+        <br>
+        <b>GPS | Vibration Sensor | Gyroscope</b>
+      </li>
       <li>
-        <img src="/assets/img/products_pms.png">
-        Property
+        <img src="/assets/img/products_pms.png"> Property
         <br>Management System</li>
       <li>
-        <img src="/assets/img/products_rms.png">
-        Revenue
+        <img src="/assets/img/products_rms.png"> Revenue
         <br>Management System</li>
+    </div>
+    <div class="flex" *ngIf="window['lang']=='ko'">
+      <li>
+        <img src="/assets/img/products_iot.png"> 사물인터넷
+        <br>
+        <b>GPS | Vibration Sensor | Gyroscope</b>
+      </li>
+      <li>
+        <img src="/assets/img/products_pms.png"> 자원관리 시스템
+        <br>
+        <b>Natural Language Processing</b>
+      </li>
+      <li>
+        <img src="/assets/img/products_rms.png"> 수익관리 시스템
+        <br>
+        <b>Maching Learning</b>
+      </li>
     </div>
   </article>
 </section>

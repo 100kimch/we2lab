@@ -6,11 +6,10 @@
       <li routerLink="/products">PRODUCTS</li>
       <li routerLink="/contact">CONTACT US</li>
     </nav>
-    <select name="language">
+
+    <select name="language" (change)="selectLanguage($event)">
       <option>English</option>
       <option>한국어</option>
-      <option>Indonesian</option>
-      <option>Japanese</option>
     </select>
   </header>
 </section>

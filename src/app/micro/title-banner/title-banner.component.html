@@ -1,6 +1,5 @@
 <ng-container [ngSwitch]="currentPage">
   <section [ngClass]="{'subtitle': isSubPage}" class="bg">
-
     <div>
       <img src="/assets/img/header_sub.png" class="bg bg_others_1">
     </div>
@@ -21,18 +20,25 @@
   <section class="intro home" *ngSwitchCase="'home'">
     <article>
       <img src="/assets/img/logo_bright.png" alt="로고">
-      <div class="contents">
-        <h1 lang="EN"> Sharing Service Solution </h1>
-        <h2 lang="EN"> based on Artificial Intelligence </h2>
+      <div class="contents" *ngIf="window['lang']=='en'">
+        <h1> Sharing Service Solution </h1>
+        <h2> based on Artificial Intelligence </h2>
+      </div>
+      <div class="contents" *ngIf="window['lang']=='ko'">
+        <h1> 인공지능 기반 공유경제 솔루션 </h1>
       </div>
     </article>
   </section>
 
   <section class="intro2 home" *ngSwitchCase="'home'">
     <article>
-      <div class="contents">
+      <div class="contents" *ngIf="window['lang']=='en'">
         <h1>Share all the assets from We2lab.</h1>
         <h2 routerLink="/business" class="withLink">Our business solutions >></h2>
+      </div>
+      <div class="contents" *ngIf="window['lang']=='ko'">
+        <h1>We2lab 비즈니스에 대해 자세히 알아보세요.</h1>
+        <h2 routerLink="/business" class="withLink">We2lab 비즈니스 솔루션 >></h2>
       </div>
     </article>
   </section>
@@ -40,8 +46,8 @@
   <section class="intro subtitle" *ngSwitchCase="'business'">
     <article>
       <div class="contents">
-        <h1 lang="EN">Businesses</h1>
-        <h2 lang="EN">based on Artificial Intelligence</h2>
+        <h1 lang="EN">BUSINESS</h1>
+        <h2 lang="EN">Sharing service solutions for room, bike, and logistics</h2>
       </div>
     </article>
   </section>
@@ -49,8 +55,8 @@
   <section class="intro subtitle" *ngSwitchCase="'products'">
     <article>
       <div class="contents">
-        <h1 lang="EN">Products</h1>
-        <h2 lang="EN">based on Artificial Intelligence</h2>
+        <h1 lang="EN">PRODUCTS</h1>
+        <h2 lang="EN">Sharing Service</h2>
       </div>
     </article>
   </section>
@@ -58,8 +64,8 @@
   <section class="intro subtitle" *ngSwitchCase="'contact'">
     <article>
       <div class="contents">
-        <h1 lang="EN">Contact Us</h1>
-        <h2 lang="EN">based on Artificial Intelligence</h2>
+        <h1 lang="EN">CONTACT US</h1>
+        <h2 lang="EN">Sharing Service</h2>
       </div>
     </article>
   </section>

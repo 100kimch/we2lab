@@ -18,8 +18,8 @@ header {
 
 header img {
   width: auto;
-  height: 1.5em;
-  margin: 0.5em 3em;
+  height: 2em;
+  margin: 0.5em;
   flex: none;
 }
 
@@ -27,6 +27,7 @@ header nav {
   width: 30vw;
   display: flex;
   flex: 1;
+  line-height: 200%;
   justify-content: flex-end;
 }
 

@@ -10,6 +10,7 @@ import { Location, NgSwitch } from '@angular/common';
 export class TitleBannerComponent implements OnInit {
   isSubPage = false;
   currentPage = '';
+  window = window;
 
   constructor(
     router: Router,

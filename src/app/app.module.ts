@@ -31,7 +31,7 @@ import { TitleBannerComponent } from './micro/title-banner/title-banner.componen
     AppRoutingModule,
     RouterModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

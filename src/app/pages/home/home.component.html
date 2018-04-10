@@ -1,32 +1,67 @@
-<section class="point">
+<section class="point" *ngIf="window['lang']=='en'">
   <img class="bg" src="/assets/img/wood.jpg">
   <article>
-    <h1>Room Sharing Service <br>with PMS / RMS</h1>
-    <h2 lang="en">We2lab is a Korean company which provides a solution for hosts to rent or lease short-term lodging with artificial intelligence.
+    <h1>Room Sharing Service<br>with PMS & RMS</h1>
+    <h2>We2lab is a Korean company which provides a solution for hosts to rent or lease short-term lodging with artificial intelligence.
       PMS and RMS are more useful for host to make a good business. We also provide a service for general hosts who have
       a single room which makes successful business in affordable prices.</h2>
   </article>
   <article>
-    <h1 class="for-mobile">Electrical Bike Sharing System</h1>
-    <h2 lang="en">We provide user-friendly electrical bike sharing system that frees us from pollution and traffic jam.
+    <h1 class="for-mobile">Electrical Bike<br>Sharing Service</h1>
+    <h2>We provide user-friendly electrical bike sharing system that frees us from pollution and traffic jam.
       AI technology solves the problems of management and profit which make sustainable sharing system.
       Various data from GPS, Vibration Sensor, Gyroscope is collected and used for a better service.</h2>
-    <h1 class="for-pc">Electrical Bike Sharing System</h1>
+    <h1 class="for-pc">Electrical Bike<br>Sharing Service</h1>
   </article>
   <article>
-    <h1>Logistics Sharing Service based on Computer</h1>
-    <h2 lang="en">We serve a next-generation B2B2C logistics solution. Collecting and analyzing data using computer vision enables your business to be pliable and high profitable. Online marketplace aggregation is supported, therefore, hosts can scale businesses.
+    <h1>Logistics Sharing Service with Computer Vision</h1>
+    <h2>We serve a next-generation B2B2C logistics solution. Collecting and analyzing data using computer vision enables your business to be pliable and high profitable. Online marketplace aggregation is supported, therefore, hosts can scale businesses.
     </h2>
-    <!-- <h2 lang="ko">우리는 다음세대의 B2B2C 물류서비스 솔루션을 제공합니다. Computer vison 기반의 데이터 수집과 분석 기술은 보다 유연한 관리와 수익 개선을 가능하게 합니다. 물류 온라인마켓 서비스 연동은 호스트에게
+    <!-- <h2>We2lab은 다음세대의 B2B2C 물류서비스 솔루션을 제공합니다. Computer vison 기반의 데이터 수집과 분석 기술은 보다 유연한 관리와 수익 개선을 가능하게 합니다. 물류 온라인마켓 서비스 연동은 호스트에게
       새로운 비지니스 확장을 지원합니다.</h2> -->
 
   </article>
 </section>
 
-<section id="section-main" class="container inner">
+<section id="section-main" class="container inner" *ngIf="window['lang']=='en'">
   <article>
     <div class="contents">
       <h1>Share all the assets from We2lab.</h1>
+      <h2 routerLink="/contact" class="withLink">Contact Us >></h2>
+    </div>
+    <div>
+      <img src="/assets/img/teamwork.svg" alt="share">
+      <app-license></app-license>
+    </div>
+  </article>
+</section>
+
+<section class="point" *ngIf="window['lang']=='ko'">
+  <img class="bg" src="/assets/img/wood.jpg">
+  <article>
+    <h1>숙박 공유 서비스
+      <br>PMS & RMS</h1>
+    <h2>We2lab은 인공지능 기반 숙박 공유 솔루션을 제공하는 대한민국 기업입니다.
+      인공지능 기반의 자원관리 시스템과 수익관리 시스템은 숙박 사업자가 더욱 효율적인 비즈니스를 가능하게 도와줍니다. 그리고 중소 숙박 사업자도 효율적인 비즈니스를 가능할 수 있도록 도와줍니다. 또한, 단독 객실을 운영하는 중소숙박 사업자도 경제적으로 활용할 수 있도록 지원합니다.</h2>
+  </article>
+  <article>
+    <h1 class="for-mobile">전기자전거 공유 서비스</h1>
+    <h2>We2lab은 전기자전거 공유서비스를 보다 유연하고 사용자에게 맞게 제공합니다. 기존의 자전거 공유서비스에서 발생하는 관리와 수익문제를 인공지능 기반 기술로 개선하여 지속발전 가능한 공유서비스를 제공합니다. GPS, 진동감지, 자이로스코프
+    등 다양한 센서 데이터는 더욱 사람에게 유용한 서비스를 위해 수집되고 활용됩니다.</h2>
+    <h1 class="for-pc">전기자전거 공유 서비스<br>GPS & Gyroscope</h1>
+  </article>
+  <article>
+    <h1>물류 공유 서비스<br>Computer Vision</h1>
+    <h2>We2lab은 다음 세대의 B2B2C 물류 서비스 솔루션을 제공합니다. Computer vision 기반의 자료수집과 분석 기술은 더욱 유연한 관리와 수익 개선을 가능하게 합니다. 물류 온라인상점 서비스 연동은 호스트에게 새로운
+    비즈니스 확장을 지원합니다.
+    </h2>
+  </article>
+</section>
+
+<section id="section-main" class="container inner" *ngIf="window['lang']=='ko'">
+  <article>
+    <div class="contents">
+      <h1>We2lab과 협력하세요.</h1>
       <h2 routerLink="/contact" class="withLink">Contact Us >></h2>
     </div>
     <div>

@@ -1,7 +1,8 @@
 <section class="section-half-transparent">
   <article>
-    <h1>Service Introduction</h1>
-    <video controls autoplay>
+    <h1 *ngIf="window['lang']=='en'">Service Introduction</h1>
+    <h1 *ngIf="window['lang']=='ko'">서비스 소개</h1>
+    <video controls autoplay controlsList="nodownload">
       <source src="https://s3.ap-northeast-2.amazonaws.com/we2lab/We2Lab_Service+Video_Final.mp4" type="video/mp4" />
     </video>
   </article>
@@ -9,21 +10,29 @@
 
 <section class="section-half-transparent title-only">
   <article>
-    <h1>Business Solutions</h1>
+    <h1 *ngIf="window['lang']=='en'">Business Solutions</h1>
+    <h1 *ngIf="window['lang']=='ko'">서비스 안내</h1>
   </article>
 </section>
 <section id="p1" class="point">
   <article>
-    <li>Room Sharing Service with PMS & RMS</li>
+    <li *ngIf="window['lang']=='en'">Room Sharing Service with PMS & RMS</li>
+    <li *ngIf="window['lang']=='ko'">숙박 공유 서비스
+    <p>인공지능 기반 자원관리<sup> PMS</sup></p>
+    <p>인공지능 기반 수익관리<sup> RMS</sup></p></li>
   </article>
 </section>
 <section id="p2" class="point">
   <article>
-    <li>Electrical Bike Sharing System</li>
+    <li *ngIf="window['lang']=='en'">Electrical Bike Sharing Service</li>
+    <li *ngIf="window['lang']=='ko'">전기자전거 공유 서비스
+    <p>GPS</p><p>Vibration Sensor</p><p>Gyroscope</p></li>
   </article>
 </section>
 <section id="p3" class="point">
   <article>
-    <li>Logistics Sharing Service based on Computer</li>
+    <li *ngIf="window['lang']=='en'">Logistics Sharing Service based on Computer Vision</li>
+    <li *ngIf="window['lang']=='ko'">물류 공유 서비스
+    <p>Computer Vision</p></li>
   </article>
 </section>

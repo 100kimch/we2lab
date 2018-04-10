@@ -16,16 +16,23 @@
 
 .point h1 {
   margin: -3em 0 1em 0;
+  letter-spacing: 1px;
 }
 
 .point li {
   width: 100%;
-  margin: 0 1em;
+  margin: 0 20px;
   list-style: circle;
   line-height: 200%;
   font-size: 1.5em;
   display: block;
   text-shadow: 0 0 10px black;
+}
+
+.point p {
+  font-size: 0.8em;
+  margin: 0;
+  padding-left: 2em;
 }
 
 #p1 {
