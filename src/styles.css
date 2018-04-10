@@ -180,30 +180,44 @@ section>* {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+.for-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
   body {
     width: 100vw;
-    height: 100vh;
     overflow-x: hidden;
   }
   section * {
     width: auto;
+  }
+  .for-mobile {
+    display: inherit;
+  }
+  .for-pc {
+    display: none;
   }
   ::-webkit-scrollbar {
     display: none;
   }
   .point article {
     display: block;
-    width: 100vw;
+    width: 100vw !important;
     padding: 1em;
     box-sizing: border-box;
+    text-shadow: 0 0 5px black;
+    background: url('/assets/img/wood.jpg');
+  }
+  .point h1 {
+    margin: 1em 0;
   }
   .point h2 {
-    width: 100vw;
+    width: 100%;
     flex: none;
   }
-  #p1 .bg {
-    height: 50em;
+  .point .bg {
+    display: none;
   }
   #section-main article {
     display: block;
@@ -211,7 +225,28 @@ section>* {
   #section-main article * {
     margin: 1em;
   }
+  .section-half-transparent {
+    padding: 1em;
+  }
+  .section-half-transparent article>* {
+    padding: 0;
+    margin: 1em 0;
+  }
   .section-description {
     padding: 1em;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .flex li {
+    margin: 1em 0 !important;
+  }
+  .flex img {
+    display: block;
+    margin: 0.5em auto !important;
+  }
+
+  app-license {
+    display: none;
   }
 }
