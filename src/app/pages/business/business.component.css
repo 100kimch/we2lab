@@ -80,3 +80,15 @@
 .list img {
   height: 25em;
 }
+
+@media screen and (max-width: 500px) {
+  #p1 article {
+    background: none;
+  }
+  #p2 article {
+    background: none;
+  }
+  #p3 article {
+    background: none;
+  }
+}
