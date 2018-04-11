@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    setInterval(() => { console.log(this.window['lang']); }, 1000);
+    // setInterval(() => { console.log(this.window['lang']); }, 1000);
   }
 
 }
