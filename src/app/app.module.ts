@@ -5,7 +5,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { LicenseComponent } from './micro/license/license.component';
 import { HeaderComponent } from './micro/header/header.component';
 import { FooterComponent } from './micro/footer/footer.component';
 import { BusinessComponent } from './pages/business/business.component';
@@ -18,7 +17,6 @@ import { TitleBannerComponent } from './micro/title-banner/title-banner.componen
   declarations: [
     AppComponent,
     HomeComponent,
-    LicenseComponent,
     HeaderComponent,
     FooterComponent,
     BusinessComponent,
